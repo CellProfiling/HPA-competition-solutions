@@ -1,4 +1,4 @@
-# Model description
+# Model description [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 A CNN model that effectively uses large resolution image and trained with data distillation.
 

@@ -1,4 +1,4 @@
-# Model description
+# Model description [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 The base networks of the model were Inception-v3, Inception-v4, and Xception, all pre-trained on ImageNet. For the competition classification task, the following modifications were made:
 
