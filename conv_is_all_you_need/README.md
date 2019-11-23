@@ -1,4 +1,4 @@
-# Model description
+# Model description [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 This is an ensemble of three models. The best performing single-model (achieving private LB score 0.543) uses the cropping window technique and Xception (referred to as CWXception). The other two CNN models are SE-ResNext50 and InceptionV3, respectively.
 
