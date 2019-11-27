@@ -12,7 +12,12 @@ The training is done by two phases: freeze the backbone and only train the fully
 With simple 5 fold average, post-processing and test time augmentation, this CNN model gets 0.553 on the test set.
 
 ## Model source
+
 The original model source can be found [here](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting).
+
+## Trained model files
+
+The trained model files can be found [here](https://kth.box.com/s/gw43cvngx6quknq8ana9um1xx3ajhi4a)
 
 ## Model usage
 
