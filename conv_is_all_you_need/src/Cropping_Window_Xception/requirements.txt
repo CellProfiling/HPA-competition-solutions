@@ -1,0 +1,10 @@
+kaggle
+keras
+ansicolors
+opencv-python
+imgaug
+opencv-python
+sklearn
+fire
+GPUtil
+pandas
