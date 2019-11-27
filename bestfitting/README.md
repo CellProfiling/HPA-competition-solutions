@@ -114,25 +114,40 @@ The trained model files can be found [here](https://kth.box.com/s/gw43cvngx6qukn
     2. classification model
 
         ```sh
-        python train.py --out_dir external_crop512_focal_slov_hardlog_class_densenet121_dropout_i768_aug2_5folds --gpu_id 0,1,2,3 --arch class_densenet121_dropout --scheduler Adam55 --epochs 55 --img_size 768 --crop_size 512 --batch_size 48 --split_name random_ext_folds5 --fold 0
+        python train.py \
+            --out_dir external_crop512_focal_slov_hardlog_class_densenet121_dropout_i768_aug2_5folds \
+            --gpu_id 0,1,2,3 --arch class_densenet121_dropout --scheduler Adam55 --epochs 55 \
+            --img_size 768 --crop_size 512 --batch_size 48 --split_name random_ext_folds5 --fold 0
         ```
 
         ```sh
-        python train.py --out_dir external_crop1024_focal_slov_hardlog_clean_class_densenet121_large_dropout_i1536_aug2_5folds --gpu_id 0,1,2,3 --arch class_densenet121_large_dropout --scheduler adam45 --epochs 45 --img_size 1536 --crop_size 1024 --batch_size 36 --split_name random_ext_noleak_clean_folds5 --fold 0
+        python train.py \
+            --out_dir external_crop1024_focal_slov_hardlog_clean_class_densenet121_large_dropout_i1536_aug2_5folds \
+            --gpu_id 0,1,2,3 --arch class_densenet121_large_dropout --scheduler adam45 --epochs 45 \
+            --img_size 1536 --crop_size 1024 --batch_size 36 --split_name random_ext_noleak_clean_folds5 --fold 0
         ```
 
         ```sh
-        python train.py --out_dir external_crop512_focal_slov_hardlog_class_inceptionv3_dropout_i768_aug2_5folds --gpu_id 0,1,2,3 --arch class_inceptionv3_dropout --scheduler adam45 --epochs 45 --img_size 768 --crop_size 512 --batch_size 64 --split_name random_ext_noleak_clean_folds5 --fold 0
+        python train.py \
+            --out_dir external_crop512_focal_slov_hardlog_class_inceptionv3_dropout_i768_aug2_5folds \
+            --gpu_id 0,1,2,3 --arch class_inceptionv3_dropout --scheduler adam45 --epochs 45 \
+            --img_size 768 --crop_size 512 --batch_size 64 --split_name random_ext_noleak_clean_folds5 --fold 0
         ```
 
         ```sh
-        python train.py --out_dir external_crop1024_focal_slov_hardlog_clean_class_resnet34_dropout_i1536_aug2_5folds --gpu_id 0,1,2,3 --arch class_resnet34_dropout --scheduler adam45 --epochs 45 --img_size 1536 --crop_size 1024 --batch_size 48 --split_name random_ext_noleak_clean_folds5 --fold 0
+        python train.py \
+            --out_dir external_crop1024_focal_slov_hardlog_clean_class_resnet34_dropout_i1536_aug2_5folds \
+            --gpu_id 0,1,2,3 --arch class_resnet34_dropout --scheduler adam45 --epochs 45 \
+            --img_size 1536 --crop_size 1024 --batch_size 48 --split_name random_ext_noleak_clean_folds5 --fold 0
         ```
 
     3. metric learning model
 
         ```sh
-        python train_ml.py --out_dir face_all_class_resnet50_dropout_i768_aug2_5folds --gpu_id 0,1,2,3 --arch class_resnet50_dropout --scheduler FaceAdam --epochs 50 --img_size 768 --batch_size 32
+        python train_ml.py \
+            --out_dir face_all_class_resnet50_dropout_i768_aug2_5folds \
+            --gpu_id 0,1,2,3 --arch class_resnet50_dropout --scheduler FaceAdam --epochs 50 \
+            --img_size 768 --batch_size 32
         ```
 
 4. Predicting
@@ -146,25 +161,44 @@ The trained model files can be found [here](https://kth.box.com/s/gw43cvngx6qukn
     2. classification model
 
         ```sh
-        python test.py --out_dir external_crop512_focal_slov_hardlog_class_densenet121_dropout_i768_aug2_5folds --gpu_id 0 --arch class_densenet121_dropout --img_size 768 --crop_size 512 --seeds 0,1,2,3 --batch_size 12 --fold 0 --augment default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose
+        python test.py \
+            --out_dir external_crop512_focal_slov_hardlog_class_densenet121_dropout_i768_aug2_5folds \
+            --gpu_id 0 --arch class_densenet121_dropout \
+            --img_size 768 --crop_size 512 --seeds 0,1,2,3 --batch_size 12 --fold 0 \
+            --augment default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose
         ```
 
         ```sh
-        python test.py --out_dir external_crop1024_focal_slov_hardlog_clean_class_densenet121_large_dropout_i1536_aug2_5folds --gpu_id 0 --arch class_densenet121_large_dropout --img_size 1536 --crop_size 1024 --seeds 0,1,2,3 --batch_size 8 --fold 0 --augment default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose
+        python test.py \
+            --out_dir external_crop1024_focal_slov_hardlog_clean_class_densenet121_large_dropout_i1536_aug2_5folds \
+            --gpu_id 0 --arch class_densenet121_large_dropout \
+            --img_size 1536 --crop_size 1024 --seeds 0,1,2,3 --batch_size 8 --fold 0 \
+            --augment default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose
         ```
 
         ```sh
-        python test.py --out_dir external_crop512_focal_slov_hardlog_class_inceptionv3_dropout_i768_aug2_5folds --gpu_id 0 --arch class_inceptionv3_dropout --img_size 768 --crop_size 512 --seeds 0,1,2,3 --batch_size 24 --fold 0 --augment default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose
+        python test.py \
+            --out_dir external_crop512_focal_slov_hardlog_class_inceptionv3_dropout_i768_aug2_5folds \
+            --gpu_id 0 --arch class_inceptionv3_dropout \
+            --img_size 768 --crop_size 512 --seeds 0,1,2,3 --batch_size 24 --fold 0 \
+            --augment default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose
         ```
 
         ```sh
-        python test.py --out_dir external_crop1024_focal_slov_hardlog_clean_class_resnet34_dropout_i1536_aug2_5folds --gpu_id 0 --arch class_resnet34_dropout --img_size 1536 --crop_size 1024 --seeds 0,1,2,3 --batch_size 12 --fold 0 --augment default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose
+        python test.py \
+            --out_dir external_crop1024_focal_slov_hardlog_clean_class_resnet34_dropout_i1536_aug2_5folds \
+            --gpu_id 0 --arch class_resnet34_dropout \
+            --img_size 1536 --crop_size 1024 --seeds 0,1,2,3 --batch_size 12 --fold 0 \
+            --augment default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose
         ```
 
     3. metric learning model
 
         ```sh
-        python test_ml.py --out_dir face_all_class_resnet50_dropout_i768_aug2_5folds --gpu_id 0,1,2,3 --arch class_resnet50_dropout --img_size 768 --batch_size 32 --dataset test --predict_epoch 45
+        python test_ml.py \
+            --out_dir face_all_class_resnet50_dropout_i768_aug2_5folds \
+            --gpu_id 0,1,2,3 --arch class_resnet50_dropout \
+            --img_size 768 --batch_size 32 --dataset test --predict_epoch 45
         ```
 
 5. Ensemble
@@ -178,11 +212,17 @@ The trained model files can be found [here](https://kth.box.com/s/gw43cvngx6qukn
     2. Make ensemble
 
         ```sh
-        python ensemble_augment.py --fold 0 --epoch_name final --model_name external_crop512_focal_slov_hardlog_class_densenet121_dropout_i768_aug2_5folds --augments default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose --do_valid 0 --do_test 1 --update 1 --seeds 0,1,2,3 --ensemble_type maximum
+        python ensemble_augment.py \
+            --fold 0 --epoch_name final \
+            --model_name external_crop512_focal_slov_hardlog_class_densenet121_dropout_i768_aug2_5folds \
+            --augments default,flipud,fliplr,transpose,flipud_lr,flipud_transpose,fliplr_transpose,flipud_lr_transpose \
+            --do_valid 0 --do_test 1 --update 1 --seeds 0,1,2,3 --ensemble_type maximum
         ```
 
         ```sh
-        python ensemble_folds.py --en_cfgs external_crop512_focal_slov_hardlog_class_densenet121_dropout_i768_aug2_5folds --do_valid 1 --do_test 1 --update 1
+        python ensemble_folds.py \
+            --en_cfgs external_crop512_focal_slov_hardlog_class_densenet121_dropout_i768_aug2_5folds \
+            --do_valid 1 --do_test 1 --update 1
         ```
 
 6. Post processing
@@ -196,11 +236,16 @@ The trained model files can be found [here](https://kth.box.com/s/gw43cvngx6qukn
     2. Search the most similar samples by metric learning model
 
         ```sh
-        python s1_calculate_distance.py --model_name face_all_class_resnet50_dropout_i768_aug2_5folds --epoch_name 045 --do_valid 0 --do_test 1
+        python s1_calculate_distance.py \
+            --model_name face_all_class_resnet50_dropout_i768_aug2_5folds --epoch_name 045 \
+            --do_valid 0 --do_test 1
         ```
 
     3. Modify submissions
 
         ```sh
-        python s2_modify_result.py --model_name external_crop1024_focal_slov_hardlog_clean_class_densenet121_large_dropout_i1536_aug2_5folds --face_model_name face_all_class_resnet50_dropout_i768_aug2_5folds --out_name d121_i1536_aug2_maximum_5folds_f012_max_test_ratio2_face_r50_i768 --threshold 0.65
+        python s2_modify_result.py \
+            --model_name external_crop1024_focal_slov_hardlog_clean_class_densenet121_large_dropout_i1536_aug2_5folds \
+            --face_model_name face_all_class_resnet50_dropout_i768_aug2_5folds \
+            --out_name d121_i1536_aug2_maximum_5folds_f012_max_test_ratio2_face_r50_i768 --threshold 0.65
         ```
