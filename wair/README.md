@@ -8,6 +8,14 @@ To train each model, Adamax [5] was used as optimizer and a cycle learning rate 
 
 The public tools involved are pytorch, opencv and scikit-learn. It takes 20-30 hours to train each model, and the full training process will take a week, using four Nvidia GTX 1080Ti GPUs.
 
+## Model source
+
+The original model source can be found [here](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair).
+
+## Trained model files
+
+The trained model files can be found [here](https://kth.box.com/s/y6xc7ok4dy76sbza4llh90uwunda9lj9)
+
 ## Model usage
 
 ### CONTENTS

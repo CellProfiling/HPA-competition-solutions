@@ -1,0 +1,17 @@
+{"RAW_DATA_DIR": "./data/raw/", 
+"EXTERNAL_DATA_DIR": "./data/external_data/", 
+"ALL_IMAGE_TRAIN_DATA_CLEAN_DIR": "./data/processed/all_train_4channel_normal_rgby/", 
+"ALL_LABEL_TRAIN_DATA_CLEAN_PATH": "./data/processed/all_more_train_process.csv", 
+"KAGGLE_LABEL_TRAIN_DATA_CLEAN_PATH": "./data/processed/train_process.csv", 
+"SUBMIT_CSV_PATH": "./data/processed/stage1_test_process.csv",
+"IMAGE_TEST_DATA_CLEAN_DIR": "./data/processed/test_4channel_normal_rgby/", 
+"MODEL_CHECKPOINT_DIR": "./comp_preds/", 
+"TRAINED_MODEL_CHECKPOINT_DIR": "./comp_mdl/", 
+"SUBMISSION_DIR": "./submission/",
+"K_FOLD_PATH_V1": "./data/processed/fold_5_v1/",
+"K_FOLD_PATH_V2": "./data/processed/fold_5_v2/"
+
+
+
+
+}
