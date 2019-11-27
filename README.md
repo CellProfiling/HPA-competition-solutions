@@ -5,7 +5,7 @@ Team original solutions for the Human Protein Atlas image classification competi
 ## Team models
 
 * Team 1 [bestfitting](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting)
-* Team 2 WAIR
+* Team 2 [WAIR](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/wair)
 * Team 3 [pudae](https://github.com/CellProfiling/pudae-kaggle-hpa)
 * Team 4 wienerschnitzelgemeinschaft
 * Team 5 [vpp](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp)
