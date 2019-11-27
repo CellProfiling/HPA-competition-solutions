@@ -11,6 +11,9 @@ The training is done by two phases: freeze the backbone and only train the fully
 
 With simple 5 fold average, post-processing and test time augmentation, this CNN model gets 0.553 on the test set.
 
+## Model source
+The original model source can be found [here](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/bestfitting).
+
 ## Model usage
 
 1. The basic Runtime Environment is python3.6, pytorch0.4.1, you can refer to requriements.txt to set up your environment.
