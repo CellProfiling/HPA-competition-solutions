@@ -1,4 +1,6 @@
-# Model description [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+# conv is all you need [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+## Model description
 
 This is an ensemble of three models. The best performing single-model (achieving private LB score 0.543) uses the cropping window technique and Xception (referred to as CWXception). The other two CNN models are SE-ResNext50 and InceptionV3, respectively.
 
@@ -7,3 +9,7 @@ In the first model (CWXception), we first resized the original image into 960×9
 Both SE-ResNext50 and InceptionV3 models are trained on the whole 512x512 images. In order to capture information from a low-level encoder, we add auxiliary supervision branches after certain intermediate layers. The deeply supervised structure makes the training much faster and improves the prediction performance.
 
 The two types of models nicely complement each other. The cropping window model specializes in capturing minute details necessary to discern difficult classes, whereas the whole-image models are able to judge based on the overall context of the image.
+
+## Model source
+
+The original model source can be found [here](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/conv_is_all_you_need).
