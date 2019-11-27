@@ -1,0 +1,8 @@
+models:
+  - model: resnet18_gwap
+    fold_checkpoints:
+      0: 42
+    folds: [0]
+
+thresholds: fix_prob
+thresholds_scale: 0.9

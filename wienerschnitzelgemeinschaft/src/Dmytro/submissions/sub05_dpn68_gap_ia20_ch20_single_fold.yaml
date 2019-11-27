@@ -1,0 +1,5 @@
+models:
+  - model: dpn68_gap_ia20
+    folds: [0]
+    fold_checkpoints: [20]
+    weight: 1.0

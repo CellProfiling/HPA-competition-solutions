@@ -1,0 +1,5 @@
+models:
+  - model: se_resnext50
+    run: ''
+    fold_checkpoints: [50, 50, 50, 50]
+    weight: 1.0

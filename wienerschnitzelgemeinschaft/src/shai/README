@@ -1,0 +1,25 @@
+# how to reproduce results:
+
+0. Operating system: Ubuntu 14.04 or 16.04
+
+1. Install fastai(from terminal):
+	a. conda create --name fastai-36 python=3.6
+	b. source activate fastai-36
+	c. pip install fastai==0.7.0pip
+	d. pip install torchtext==0.2.3
+	e. pip install torch==0.4.1
+
+2. Folder structure:
+	proteinAtlas--|-- input (this folder is provided in google drive)
+		      |-- fastai (contains all scripts and model weights) 
+
+2. Copy input data in 'input' folder (processed input data provided in google drive)
+3. Copy trained model weights in 'fastai/models' directory (model weights provided in google drive)
+4. Copy submissions from other team members and put them in 'fastai/sub_dir_team' folder.
+
+4. Run predict_all.sh from fastai directory. This will create 2 submissions from shai models in 'fastai/subs'
+
+5. Finally, two ensemble prediction, 'enstw36a.csv' and 'enstw39b1a.csv' will be created (fastai/sub_dir_team) using submissions from all team members, which will score around 0.640 in public LB. These two files were used in psudo labelling.
+
+
+
