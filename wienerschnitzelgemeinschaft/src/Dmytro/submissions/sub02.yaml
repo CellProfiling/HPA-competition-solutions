@@ -1,0 +1,5 @@
+models:
+  - model: dpn92_ia20
+    run: ''
+    fold_checkpoints: [40, 40, 40, 40]
+    weight: 1.0

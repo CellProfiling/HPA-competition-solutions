@@ -1,0 +1,6 @@
+models:
+  - model: dpn68_gwap_ia20_sgd_fl
+    fold_checkpoints:
+      0: 28
+    folds: [0]
+

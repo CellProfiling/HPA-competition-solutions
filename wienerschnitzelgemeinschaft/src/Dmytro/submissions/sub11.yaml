@@ -1,0 +1,9 @@
+models:
+  - model: se_resnext50
+    fold_checkpoints: [40, 40, 40, 40]
+  - model: resnet50
+    fold_checkpoints: [50, 50, 50, 50]
+  - model: dpn107_ia20
+    fold_checkpoints: [24, 24, 24, 24]
+  - model: dpn92_ia20
+    fold_checkpoints: [40, 40, 40, 40]
