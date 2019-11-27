@@ -1,6 +1,6 @@
-# NTU_MiRA
+# NTU_MiRA [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-## Model description [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+## Model description
 
 A CNN model that effectively uses large resolution image and trained with data distillation.
 
