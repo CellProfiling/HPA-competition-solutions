@@ -1,0 +1,14 @@
+fastai==1.0.22
+lightgbm==2.2.2
+matplotlib==3.0.2
+numpy==1.15.4
+opencv-python==3.4.4.19
+pandas==0.23.0
+Pillow==5.3.0
+scikit-image==0.13.1
+scikit-learn==0.19.1
+scipy==1.1.0
+seaborn==0.8.1
+torch==1.0.0.dev20181207
+torchvision==0.2.1
+tqdm==4.28.1
