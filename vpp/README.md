@@ -23,14 +23,14 @@ The original model source can be found [here](https://github.com/CellProfiling/H
 
 ## Trained model files
 
-The trained model files can be found [here](https://kth.box.com/s/12k7y6xf0xfqsqoq6op4ihic88ddhali)
+The trained model files can be found [here](https://kth.box.com/s/12k7y6xf0xfqsqoq6op4ihic88ddhali).
 
 ## Model usage
 
 We provide two different versions as follows:
 
-- tiny([run_submit_tiny.sh](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp/src/run_submit_tiny.sh)) : It's a simple version which can be got 0.57196/0.64658 on the leaderboard with a small number of models.
-- final([run_submit_final.sh](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp/src/run_submit_final.sh)) : It's our final submission which can be got 0.56689/0.64615 on the leaderboard.
+- Tiny ([run_submit_tiny.sh](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp/src/run_submit_tiny.sh)) : It's a simple version which got 0.57196/0.64658 on the leaderboard with a small number of models.
+- Final ([run_submit_final.sh](https://github.com/CellProfiling/HPA-competition-solutions/tree/master/vpp/src/run_submit_final.sh)) : It's our final submission which got 0.56689/0.64615 on the leaderboard.
 
 ### 1. Image Preprocessing
 

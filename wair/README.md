@@ -14,7 +14,7 @@ The original model source can be found [here](https://github.com/CellProfiling/H
 
 ## Trained model files
 
-The trained model files can be found [here](https://kth.box.com/s/y6xc7ok4dy76sbza4llh90uwunda9lj9)
+The trained model files can be found [here](https://kth.box.com/s/y6xc7ok4dy76sbza4llh90uwunda9lj9).
 
 ## Model usage
 

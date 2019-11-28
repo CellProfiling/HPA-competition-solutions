@@ -16,10 +16,9 @@ The original model source can be found [here](https://github.com/CellProfiling/H
 
 ## Trained model files
 
-The trained model files can be found [here](https://kth.box.com/s/2lkwn52zs0glid0wro8riidxriax7pkq)
+The trained model files can be found [here](https://kth.box.com/s/2lkwn52zs0glid0wro8riidxriax7pkq).
 
 ## Model usage
 
-1. for single fold run with different resolution, just change and run code/train_agn.py
-transforms.RandomCrop(256) with (256,384,512)
+1. for single fold run with different resolution, just change and run code/train_agn.py transforms.RandomCrop(256) with (256,384,512)
 2. for predict models and ensemble sub, just run code/submit.sh
