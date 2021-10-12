@@ -8,7 +8,7 @@ ImageHash==4.0
 iterative-stratification==0.1.6
 torch==0.4.1
 torchvision==0.2.1
-opencv-python==3.4.3.18
+opencv-python==3.4.7.28
 mlcrate==0.1.0
 multiprocess==0.70.5
 scikit-image==0.13.0
